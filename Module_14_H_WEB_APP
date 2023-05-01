@@ -1,0 +1,112 @@
+######################################################################
+###################################################################### 
+###          ____  _                                               ###
+##          / ___|| |_   ___   _____  _ __   ___ __ _ ___           ##
+##          \___ \| | | | \ \ / / _ \| '_ \ / __/ _` / __|          ##
+##           ___) | | |_| |\ V / (_) | | | | (_| (_| \__ \          ##
+##          |____/|_|\__, | \_/ \___/|_| |_|\___\__,_|___/          ##
+##                   |___/                                          ##
+###                                                                ###
+######################################################################
+######################################################################
+
+
+--> Introduction to Web Applications
+========================================
+
+Web applications are software programs that run on web browsers and act as the interface between users and web servers through web pages. They enable the users to request, submit, and retrieve data to/from a database over the Internet by interacting through a user-friendly graphical user interface (GUI). Users can input data via a keyboard, mouse, or touch interface depending on the device they are using to access the web application. Based on browser-supported programming languages such as JavaScript, HTML, and CSS, web applications work in combination with other programming languages such as SQL to access data from the databases. Web applications are developed as dynamic web pages, and they allow users to communicate with servers using server-side scripts. They allow users to perform specific tasks such as searching, sending emails, connecting with friends, online shopping, and tracking and tracing. Furthermore, there are several desktop applications that provide users with the flexibility to work with the Internet.
+Entities develop various web applications to offer their services to users via the Internet. Whenever users need to access such services, they can request them by submitting the Uniform Resource Identifier (URI) or Uniform Resource Locator (URL) of the web application in a browser. The browser passes this request to the server, which stores the web application data and displays it in the browser. Some popular web servers are Microsoft IIS, Apache HTTP Server, H2O, LiteSpeed, Cherokee, etc.
+Increasing Internet usage and expanding online businesses have accelerated the development and ubiquity of web applications across the globe. A key factor in the adoption of web applications for business purposes is the multitude of features that they offer. Moreover, they are secure and relatively easy to develop. In addition, they offer better services than many computer-based software applications and are easy to install, maintain, and update.
+
+The advantages of web applications are listed below: 
+ As they are independent of the operating system, their development and troubleshooting are easy and cost-effective.
+ They are accessible anytime and anywhere using a computer with an Internet connection.
+ The user interface is customizable, making it easy to update. 
+ Users can access them on any device having an Internet browser, including PDAs, smartphones, etc.
+ Dedicated servers, monitored and managed by experienced server administrators, store all the web application data, allowing developers to increase their workload capacity.
+ Multiple locations of servers not only increase physical security but also reduce the burden of monitoring thousands of desktops using the program.
+ They use flexible core technologies, such as JSP, Servlets, Active Server Pages, SQL Server, .NET, and scripting languages, which are scalable and support even portable platforms.
+Although web applications enforce certain security policies, they are vulnerable to various attacks such as SQL injection, cross-site scripting, and session hijacking.
+How Web Applications Work
+The main function of web applications is to fetch user-requested data from a database. When a user clicks or enters a URL in a browser, the web application immediately displays the requested website content in the browser. This mechanism involves the following steps: 
+ First, the user enters the website name or URL in the browser. Then, the user's request is sent to the web server.
+ On receiving the request, the web server checks the file extension:
+* If the user requests a simple web page with an HTM or HTML extension, the web server processes the request and sends the file to the user's browser.
+* If the user requests a web page with an extension that needs to be processed at the server side, such as php, asp, and cfm, then the web application server must process the request.
+ Therefore, the web server passes the user's request to the web application server, which processes the user’s request.
+ The web application server then accesses the database to perform the requested task by updating or retrieving the information stored on it.
+ After processing the request, the web application server finally sends the results to the web server, which in turn sends the results to the user's browser.
+
+
+--> Web Application Architecture
+==================================
+
+Web applications run on web browsers and use a set of server-side scripts (Java, C#, Ruby, PHP, etc.) and client-side scripts (HTML, JavaScript, etc.) to execute the application. The working of the web application depends on its architecture, which includes hardware and software that perform tasks such as reading the request as well as searching, gathering, and displaying the required data. The web application architecture includes different devices, web browsers, and external web services that work with different scripting languages to execute the web application. It consists of three layers: 1. Client or presentation layer 2. Business logic layer 3. Database layer
+The client or presentation layer includes all physical devices present on the client side, such as laptops, smartphones, and computers. These devices feature operating systems and compatible browsers, which enable users to send requests for required web applications. The user requests a website by entering a URL in the browser, and the request travels to the web server. The web server then responds to the request and fetches the requested data; the application finally displays this response in the browser in the form of a web page. The “business logic” layer itself consists of two layers: the web-server logic layer and the business logic layer. The web-server logic layer contains various components such as a firewall, an HTTP request parser, a proxy caching server, an authentication and login handler, a resource handler, and a hardware component, e.g., a server. The firewall offers security to the content, the HTTP request parser handles requests coming from clients and forwards responses to them, and the resource handler is capable of handling multiple requests simultaneously. The web-server logic layer contains code that reads data from the browser and returns the results (e.g., IIS Web Server, Apache Web Server).
+The business logic layer includes the functional logic of the web application, which is implemented using technologies such as .NET, Java, and “middleware”. It defines the flow of data, according to which the developer builds the application using programming languages. It stores the application data and integrates legacy applications with the latest functionality of the application. The server needs a specific protocol to access user-requested data from its database. This layer contains the software and defines the steps to search and fetch the data. The database layer consists of cloud services, a B2B layer that holds all the commercial transactions, and a database server that supplies an organization’s production data in a structured form (e.g., MS SQL Server, MySQL server).
+
+Web Services A web service is an application or software that is deployed over the Internet. It uses a standard
+messaging protocol (such as SOAP) to enable communication between applications developed on different platforms. For instance, Java-based services can interact with PHP applications. These web-based applications are integrated with SOAP, UDDI, WSDL, and REST across the network.
+Web Service Architecture
+A web service architecture describes the interactions among the service provider, service requester, and service registry. These interactions consist of three operations, namely publish, find, and bind. All these roles and operations work together on web service artifacts known as software modules (services) and their descriptions. Service providers offer web services. They deploy and publish service descriptions of a web service to a service registry. Requesters find these descriptions from the service registry and use them to bind with the web service provider and invoke the web service implementation. There are three roles in a web service: 
+ Service Provider: It is a platform from where services are provided. 
+ Service Requester: It is an application or client that is seeking a service or trying to establish communication with a service. In general, the browser is a requester, which invokes the service on behalf of a user.
+ Service Registry: It is the place where the provider loads service descriptions. The service requester discovers the service and retrieves binding data from the service descriptions.
+
+There are three operations in a web service architecture:  Publish: During this operation, service descriptions are published to allow the requester to discover the services.
+ Find: During this operation, the requester tries to obtain the service descriptions. This operation can be processed in two different phases: obtaining the service interface description at development time and obtain the binding and location description calls at run time.
+ Bind: During this operation, the requester calls and establishes communication with the services during run time, using binding data inside the service descriptions to locate and invoke the services.
+There are two artifacts in a web service architecture:  Service: It is a software module offered by the service provider over the Internet. It communicates with the requesters. At times, it can also serve as a requester, invoking other services in its implementation.
+ Service Description: It provides interface details and service implementation details. It consists of all the operations, network locations, binding details, datatypes, etc. It can be stored in a registry and invoked by the requester.
+Characteristics of Web Services 
+ XML-based: Web services use XML for data representation and transportation. XML usage can avoid OS, networking, or platform binding. Applications that provide web services are highly interoperable.
+ Coarse-grained service: In web services, some objects contain a massive amount of information and offer greater functionality than fine-grained services. A coarse-grained service is a combination of multiple fine-grained services.
+ Loosely coupled: Web services support a loosely coupled approach for interconnecting systems. The interaction between the systems can occur via the web API by sending XML messages. The web API incorporates a layer of abstraction for the infrastructure to make the connection flexible and adaptable.
+ Asynchronous and synchronous support: Synchronous services are called by users who wait for a response, whereas asynchronous services are called by users who do not wait for a response. RPC-based messages and document-based messages are often used for synchronous and asynchronous web services.
+Synchronous and asynchronous endpoints are implemented using servlets, SOAP/XML, and HTTP.
+ RPC support: Web services support remote procedure calls (RPC) similarly to traditional applications.
+Types of Web Services Web services are of two types:  SOAP web services
+The Simple Object Access Protocol (SOAP) defines the XML format. XML is used to transfer data between the service provider and the requester. It also determines the procedure to build web services and enables data exchange between different programming languages.
+ RESTful web services
+REpresentational State Transfer (RESTful) web services are designed to make the services more productive. They use many underlying HTTP concepts to define the services. It is an architectural approach rather than a protocol like SOAP.
+Components of Web Service Architecture:  UDDI: Universal Description, Discovery, and Integration (UDDI) is a directory service that lists all the services available.
+ WSDL: Web Services Description Language is an XML-based language that describes and traces web services.
+ WS-Security: Web Services Security (WS-Security) plays an important role in securing web services. It is an extension of SOAP and aims to maintain the integrity and confidentiality of SOAP messages as well as to authenticate users.
+There are other important features/components of the web service architecture, such as WS-Work Processes, WS-Policy, and WS Security Policy, which play an important role in communication between applications.
+
+Attackers exploit the vulnerabilities of one or more elements among the seven levels to gain unrestricted access to an application or the entire network.  Layer 7 If an attacker finds vulnerabilities in the business logic (implemented using languages such as .NET and Java), he/she can exploit these vulnerabilities by performing input validation attacks such as XSS.
+ Layer 6 Third-party components are services that integrate with the website to achieve certain functionality (e.g., Amazon.com targeted by an attacker is the main website; citrix.com is a third-party website). When customers choose a product to buy, they click on the Buy/Checkout button. This redirects them to their online banking account through a payment gateway. Third-party websites such as citrix.com offer such payment gateways. Attackers might exploit such redirection and use it as a medium/pathway to enter Amazon.com and exploit it.
+ Layer 5 Web servers are software programs that host websites. When users access a website, they send a URL request to the web server. The server parses this request and responds with a web page that appears in the browser. Attackers can perform footprinting on a web server that hosts the target website and grab banners that contain information such as the web server name and its version. They can also use tools such as Nmap to gather such information. Then, they might start searching for published vulnerabilities in the CVE database for that particular web server or service version number and exploit any that they find.
+ Layer 4
+Databases store sensitive user information such as user IDs, passwords, phone numbers, and other particulars. There could be vulnerabilities in the database of the target website. These vulnerabilities can be exploited by attackers using tools such as sqlmap to gain control of the target’s database.
+ Layer 3 Attackers scan an operating system to find open ports and vulnerabilities, and they develop viruses/backdoors to exploit them. They send malware through the open ports to the target machine; by running such malware, they can compromise the machine and gain control over it. Later, they try to access the databases of the target website.
+ Layer 2
+Routers/switches route network traffic only to specific machines. Attackers flood these switches with numerous requests that exhaust the CAM table, causing it to behave like a hub. Then, they focus on the target website by sniffing data (in the network), which can include credentials or other personal information.
+ Layer 1
+IDS and IPS raise alarms if any malicious traffic enters a target machine or server. Attackers adopt evasion techniques to circumvent such systems so that they do not trigger any alarm while exploiting the target.
+
+
+--> OWASP Top 10 Application Security Risks – 2017 Source: https://www.owasp.org OWASP is an international organization that specifies the top 10 vulnerabilities and flaws of web applications. The latest OWASP top 10 application security risks are as follows: 
+
+ A1 – Injection Injection flaws, such as SQL, command injection, and LDAP injection, occur when untrusted data is sent to an interpreter as part of a command or query. The attacker’s hostile data can trick the interpreter into executing unintended commands or accessing data without proper authorization. 
+ A2 – Broken Authentication
+Application functions related to authentication and session management are often implemented incorrectly, thereby allowing attackers to compromise passwords, keys, or session tokens or to exploit other implementation flaws to assume identities of other users (temporarily or permanently).
+ A3 – Sensitive Data Exposure
+Many web applications and APIs do not properly protect sensitive data, such as financial, healthcare, and personally identifiable information (PII) data. Attackers may steal or modify such weakly protected data to conduct credit card fraud, identity theft, or other crimes. Sensitive data requires extra protection such as encryption at rest or in transit, as well as special precautions when exchanged with the browser.
+ A4 – XML External Entity (XXE)
+Many older or poorly configured XML processors evaluate external entity references within XML documents. External entities can disclose internal files using the file URI handler, internal SMB file shares on unpatched Windows servers, internal port scanning, remote code execution, and DoS service attacks such as the billion laughs attack.
+ A5 – Broken Access Control
+Restrictions on what authenticated users are allowed to do are not properly enforced. Attackers can exploit these flaws to access unauthorized functionality and/or data, such as accessing other users' accounts, viewing sensitive files, modifying other users’ data, and changing access rights.
+ A6 – Security Misconfiguration Security misconfiguration is the most common issue in web security, which is due in part to manual or ad hoc configuration (or no configuration at all), insecure default configurations, open S3 buckets, misconfigured HTTP headers, error messages containing sensitive information, and not patching or upgrading systems, frameworks, dependencies, and components in a timely manner (or at all).
+ A7 – Cross-Site Scripting (XSS) XSS flaws occur whenever an application includes untrusted data in a new web page without proper validation or escaping, or whenever it updates an existing web page with user-supplied data using a browser API that can create JavaScript. XSS allows attackers to execute scripts in the victim’s browser, which can hijack user sessions, deface websites, or redirect the user to malicious sites.
+ A8 – Insecure Deserialization Insecure deserialization flaws occur when an application receives hostile serialized objects. Insecure deserialization leads to remote code execution. Even if deserialization flaws do not result in remote code execution, serialized objects can be replayed, tampered with, or deleted to spoof users, conduct injection attacks, and elevate privileges.
+ A9 – Using Components with Known Vulnerabilities
+Components such as libraries, frameworks, and other software modules run with the same privileges as the application. If a vulnerable component is exploited, such an attack can facilitate serious data loss or server takeover. Applications and APIs using components with known vulnerabilities may undermine application defenses and enable various attacks and impacts.
+ A10 – Insufficient Logging and Monitoring Insufficient logging and monitoring, coupled with missing or ineffective integration with incident response, allows attackers to further attack systems, maintain persistence, pivot to more systems, and tamper with, extract, or destroy data. Most breach studies show that the time to detect a breach is over 200 days, typically by external parties rather than internal processes or monitoring.
+
+
+Sekasntis A1
+
+
+
+
