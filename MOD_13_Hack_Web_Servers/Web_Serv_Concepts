@@ -1,0 +1,25 @@
+============================================
+|                                          |
+|   CEHv12 MODULE 13 Hacking WEB Servers   |
+|                                          |
+|   WEB Server Concepts                    |
+|                                          |
+============================================
+
+
+*** Web Server Operations ***
+
+A web server is a computer system that stores, processes, and delivers web pages to global clients via the Hypertext Transfer Protocol (HTTP). 
+In general, a client initiates a communication process through HTTP requests. When a client desires to access any resource such as web pages, photos, and videos, the client’s browser generates an HTTP request that is sent to the web server. Depending on the request, the web server collects the requested information/content from the data storage or application servers and responds to the client’s request with an appropriate HTTP response. If a web server cannot find the requested information, then it generates an error message.
+
+*** Components of a Web Server ***
+
+▪ Document Root - is one of the root file directories of the web server that stores critical HTML files related to the web pages of a domain name, which will be sent in response to requests. For example, if the requested URL is www.certifiedhacker.com and the document root is named “certroot” and is stored in the directory /admin/web, then /admin/web/certroot is the document directory address. If the complete request is www.certifiedhacker.com/P-folio/index.html, the server will search for the file path /admin/web/certroot/P-folio/index.html.
+
+▪ Server Root - is top-level root directory under the directory tree in which the server’s configuration and error, executable, and log files are stored. It consists of the code that implements the server. The server root, in general, consists of four files. One file is dedicated to the code that implements the server, while the other three are subdirectories, namely, -conf, -logs, and -cgi-bin, which are used for configuration information, logs, and executables, respectively.
+
+▪ Virtual Document Tree - provides storage on different machine or disk after original disk becomes full. Is case-sensitive and can be used to provide object-level security.
+In the above example under document root, for a request of www.certifiedhacker.com/P-folio/index.html, the server can also search for the file path /admin/web/certroot/P-folio/index.html if the directory admin/web/certroot is stored in another disk.
+
+▪ Virtual Hosting - is a technique of hosting multiple domains or websites on the same server. This technique allows the sharing of resources among various servers. It is employed in large-scale companies, in which company resources are intended to be accessed and managed globally. The following are the types of virtual hosting: * Name-based hosting; * Internet Protocol (IP)-based hosting; * Port-based hosting; * Web Proxy A proxy server is located between the web client and web server. Owing to the placement of web proxies, all requests from clients are passed on to the web server through the web proxies. They are used to prevent IP blocking and maintain anonymity.
+

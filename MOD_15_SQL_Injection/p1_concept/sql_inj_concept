@@ -1,0 +1,45 @@
+###########################################################################
+###########################################################################
+#####  ____   ___  _       ___        _           _   _               #####
+##    / ___| / _ \| |     |_ _|_ __  (_) ___  ___| |_(_) ___  _ __       ##
+##    \___ \| | | | |      | || '_ \ | |/ _ \/ __| __| |/ _ \| '_ \      ##
+##     ___) | |_| | |___   | || | | || |  __/ (__| |_| | (_) | | | |     ##
+##    |____/ \__\_\_____| |___|_| |_|/ |\___|\___|\__|_|\___/|_| |_|     ##
+##                               |__/                                    ##
+#####																  #####	
+###########################################################################
+###########################################################################
+
+      -------------------------------------------------------------
+      ##### CEHv12 | 2023m. | Syllabus for exam prep. by P.S. #####
+      -------------------------------------------------------------
+
+SQL injection is a technique used to take advantage of unsanitized input vulnerabilities to pass SQL commands through a web application for execution by a backend database. 
+App uses SQL statements to authenticate users to the app, validate roles and access levels, store and obtain information for the app and user, and link to other data sources. 
+SQL injection attacks work because the application does not properly validate an input before passing it to an SQL statement.
+
+
+
+*** Understanding HTTP POST Request ***
+----------------------------------------
+
+HTTP POST request is a method for carrying requested data to server. Unlike the HTTP GET method, the HTTP POST request carries the requested data as a part of the message body. 
+Ideal for communicating with an XML web service, these methods submit and retrieve data from the web server. When a user provides information and clicks Submit, string is visible in the body of the HTTP or HTTPS POST request as:
+~~~ select * from Users where (username = 'smith' and password = 'simpson');
+
+
+*** Understanding an SQL Injection Query—Code Analysis ***
+----------------------------------------------------------
+
+Code analysis or code review is the most effective technique for identifying vulnerabilities or flaws in the code. 
+Attacker exploits the vulnerabilities found in the code to gain access to the database. Attacker logs into an account by the following process: 
+
+1. A user enters a username and password that match a record in the user’s table 
+2. A dynamically generated SQL query is used to retrieve the number of matching rows 
+3. The user is then authenticated and redirected to the requested page 
+4. When the attacker enters blah' or 1=1 --, then the SQL query will look like: SELECT Count(*) FROM Users WHERE UserName='blah' Or 1=1 --' AND Password=''
+5. A pair of hyphens indicate the beginning of a comment in SQL; therefore, the query simply becomes
+SELECT Count(*) FROM Users WHERE UserName='blah' Or 1=1 string strQry = "SELECT Count(*) FROM Users WHERE UserName='" + txtUser.Text + "' AND Password='" + txtPassword.Text + "'";
+
+
+
